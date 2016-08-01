@@ -1,0 +1,18 @@
+{
+"manifest_version": 2, // chrome manifest version
+"name": "Instructables Default All Steps", // Any name here
+"description": "Sets all instructables default to View All Steps", // some description
+"version": "0.1", // Extension version for our records
+"permissions": [
+	"webRequest", // we are reading the tcp requests made by the browser
+	"webRequestBlocking", // in a blocking manner
+	"http://*/*",
+	"https://*/*", // urls with this regular expression pattern
+	"*://www.facebook.com/*/"
+],
+"background": {
+	"scripts": [
+		"background.js" // the script that will be handling stuff.
+	]
+}
+}
